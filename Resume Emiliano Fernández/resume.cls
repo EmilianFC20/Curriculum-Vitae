@@ -6,7 +6,12 @@
 \usepackage{geometry}
 \usepackage{array}
 \usepackage{enumitem}
+\usepackage{xcolor} % Added for custom link colors
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, % Enables colored links
+    urlcolor=blue    % Sets URL link color to blue
+}
 \usepackage{xltabular}
 \usepackage{graphicx}
 \usepackage{outlines}
