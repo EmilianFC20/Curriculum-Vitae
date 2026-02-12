@@ -3,7 +3,7 @@
 \begin{document}
 
 \fontfamily{ppl}\selectfont
-\linespread{0.1}
+\linespread{0.8}
 
 \noindent
 % \begin{tabularx}{\linewidth}{@{}m{0.8\textwidth} m{0.2\textwidth}@{}}
@@ -29,11 +29,14 @@
 % \end{tabularx}
 
 \begin{center}
-    \csection{PROFESSIONAL PROFILE}{\small
+        \csection{PROFESSIONAL PROFILE}{\small
         \begin{itemize}
-            \item {Computer Engineering M.S. student passionate about designing and building scalable network infrastructure. Seeking to apply knowledge of computer architecture, hardware design, and automation to solve challenges in large-scale datacenter environments.}
+            \item {Computer Engineering M.S. student specializing in computer architecture and high-performance networking. Eager to apply project experience in hardware design, automation, and network systems to contribute to the development of scalable infrastructure.}
         \end{itemize}
     }
+\begin{tabularx}{\linewidth}{@{}*{2}{X}@{}}
+% left side %
+{
     
     \csection{EDUCATION}{\small
         \begin{itemize}
@@ -44,37 +47,43 @@
         \end{itemize}
     }
 
+    \csection{AWARDS \& RECOGNITIONS}{\small
+        \begin{itemize}
+            % item 1
+            \item \frcontent{Viterbi Endowment Scholarship}{Full-tuition merit-based scholarship.}{}{2025-2027}
+            % item 2
+            \item \frcontent{Fulbright Grant}{Grant to pursue graduate studies in the United States.}{}{2024}
+            % item 3
+            \item \frcontent{Graduated with Honors and Top of the Class}{Highest GPA in the B.S. in Biomedical Engineering.}{}{2020}
+            % item 4
+            \item \frcontent{Academic Distinction Scholarship}{70\% tuition merit-based scholarship.}{}{2016-2020}
+        \end{itemize}
+    }
+    
+    \csection{SKILLS}{\small
+        \begin{itemize}
+            \item \textbf{Programming Languages} \newline
+            {\footnotesize Python, C/C++, Verilog, CUDA, Bash, Dart, VBA.}{}{}
+            \item \textbf{Software \& Tools} \newline
+            {\footnotesize Linux (Debian, Fedora/CentOS), Docker, OpenWRT, Git, PyTorch, Jupyter, Modelsim, Cadence Virtuoso, MATLAB, LaTeX.}{}{}
+            \item \textbf{Networking} \newline
+            {\footnotesize TCP/IP, DNS, DHCP, LAN/WAN, Firewall Configuration.}{}{}
+            \item \textbf{Languages} \newline
+            {\footnotesize Spanish (native), English (C1 level).}
+        \end{itemize}
+    }
+}
+% end left side %
+& 
+% right side %
+{
+
     \csection{ENGINEERING PROJECTS}{\small
         \begin{itemize}
             \item \frcontent{ARM-Compatible Smart NIC with GPU}{Developing an ARM-based SmartNIC with GPU acceleration for high-throughput, low-latency network processing \href{https://github.com/USC-HW-Engineers/EE533-DPU}{(Github).}}{}{January 2026 - Present}
-            \item \frcontent{Pipelined MAC Unit}{Designed and implemented a high-performance 16-bit pipelined MAC unit, from architecture to full-custom layout, using Cadence Virtuoso.}{}{December 2025}
-            \item \frcontent{Home Server and Mesh Network}{Deployed a Debian-based home server for NAS, home automation, reverse proxy, and DNS filtering using Docker. Implemented a mesh network, enhancing home connectivity and network management.}{}{December 2023-August 2024}
-            \item \frcontent{Local AI Server}{Created a local AI inference server leveraging an NVIDIA GPU with Ollama models and OpenWebui to accelerate AI workloads. Integrating a Discord bot for secure, private document querying.}{}{September 2024 - Present}
-            % \item \frcontent{Human-Machine Interface (HMI) for Electric Wheelchair}{Designed and developed a human-machine interface using Arduino and Python to detect and classify eye movement signals to control an electric wheelchair for people with tetraplegia.}{}{May 2020}
-        \end{itemize}
-    }
-
-    \csection{SKILLS}{\small
-        \begin{itemize}
-             \item \textbf{Programming Languages} \newline
-            {\footnotesize Python, C/C++, Verilog, CUDA, Bash, Dart, VBA.}{}{}
-            \item \textbf{Software & Tools} \newline
-            {\footnotesize Linux (Debian), Docker, Git, PyTorch, Jupyter, Modelsim, Cadence Virtuoso, MATLAB, Atmel Studio, Arduino, Solidworks, LaTeX, Flutter.}{}{}
-             \item \textbf{Networking} \newline
-            {\footnotesize TCP/IP, DNS, DHCP, LAN/WAN, Mesh Networking.}{}{}
-            \item \textbf{Languages} \newline
-            {\footnotesize Spanish (native language), English (C1 level).}
-        \end{itemize}
-    }
-
-    \csection{WORK EXPERIENCE}{\small
-        \begin{itemize}
-            \item \textbf{Sr. Project Support Coordinator} - PPD, Thermo Fisher Scientific \hfill \textit{May 2021 - Aug 2025}
-            \vspace{-0.2cm}
-            \begin{itemize}
-                \item Co-developed and deployed a VBA-based tool to automate access reconciliation across multiple systems, creating company-wide time savings and reducing compliance risks for hundreds of projects.
-                \item Led support teams, managed timelines, developed technical training materials, and coordinated with management to ensure process adherence and quality across a large portfolio of client projects.
-            \end{itemize}
+            \item \frcontent{Pipelined MAC Unit}{Designed and optimized a full-custom 16-bit pipelined MAC unit in Cadence Virtuoso, completing schematic design, transistor-level simulations, and DRC/LVS layout verification.}{}{November 2025}
+            \item \frcontent{Local AI Server}{Created a local AI inference server leveraging an NVIDIA GPU with Ollama models and OpenWebui to accelerate AI workloads. Currently integrating a Discord bot in Python for secure, private document querying.}{}{September 2024 - Present}
+            \item \frcontent{Home Lab \& Network}{Deployed a Debian-based home server for NAS, home automation, and DNS filtering using Docker. Designed and implemented a reverse proxy enabling SSL and WebSocket support for secure routing. Managed advanced routing, firewall, and network services using OpenWRT.}{}{December 2023-August 2024}
         \end{itemize}
     }
 
@@ -85,14 +94,22 @@
         \end{itemize}
     }
 
-    \csection{AWARDS \& RECOGNITIONS}{\small
+    \csection{WORK EXPERIENCE}{\small
         \begin{itemize}
-            \item Viterbi Endowment Scholarship for full master's degree tuition (2025-2027)
-            \item Fulbright Grant for master's studies in USA (2024)
-            \item Graduated with Honors and Top of the Biomedical Engineering Class (2020)
-            \item Academic Distinction Scholarship for 70\% of bachelors degree tuition (2016-2020)
+            \item \textbf{Sr. Project Support Coordinator PPD, Thermo Fisher Scientific}
+            \vspace{-0.2cm}
+            \begin{footnotesize}
+            \begin{itemize}
+                \item Co-developed and deployed a VBA-based tool to automate access reconciliation across multiple systems, creating company-wide time savings and reducing compliance risks for hundreds of projects.
+                \item Led support teams, managed timelines, developed technical training materials, and coordinated with management to ensure process adherence and quality across a large portfolio of client projects.
+            \end{itemize}
+            \vspace{-0.2cm}
+            \textit{May 2021 - Aug 2025} 
+            \end{footnotesize}
         \end{itemize}
     }
 
+}
+\end{tabularx}
 \end{center}
 \end{document}
